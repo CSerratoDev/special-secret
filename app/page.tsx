@@ -30,25 +30,27 @@ export default function Home() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className="min-w-screen">
-            <Frames />
-          </div>
-          <div className="text-center max-w-xl px-4 pb-10 animate-fade-in text-2xl md:text-3xl font-light tracking-wide">
+
+          <div className="text-center max-w-xl pt-10 px-4 pb-5 animate-fade-in text-2xl md:text-3xl font-light tracking-wide">
             <TextSlice
               text={[
                 "Pensaste que lo iba olvidar?",
-                "Hay pocas cosas que no me gustan olvidar",
+                "Hay pocas cosas que NO me gustan olvidar",
                 "Sin duda, serás siempre una de ellas ❤️",
                 "Amor... ¡Hoy! quiero desearte",
-                "una excelente mañana 🌼",
-                "un hermoso día ☀️",
-                "una velada increíble 💗",
+                "una BONITA mañana 🌼",
+                "un HERMOSO día ☀️",
+                "una VELADA increíble 💗",
                 "Porque hoy...",
                 "Hoy...👀",
-                "Nació hace 25 años una princesa 👸🏼 dormilona",
+                "Nació hace 25 años 👩🏻‍🍼...",
+                "Una PRINCESA 👑",
                 "Y eso fue lo mejor que paso aquel día 🌹",
                 "Te quiero Mucho Mi AMOR 🥰",
-                "Feliz cumple Princesaaaaa 🥳🎂🥹"
+                "Feliz cumpleeeee 🥳🎂🥹",
+                "TE QUIERO MUCHOOO 💘",
+                "ATENTAMENTE...",
+                "Alexis Serrato ✍🏽"
               ]}
               typingSpeed={75}
               pauseDuration={1000}
@@ -60,7 +62,9 @@ export default function Home() {
             />
 
           </div>
-          
+          <div className="min-w-screen">
+            <Frames />
+          </div>
         </div>
       )}
     </div>
