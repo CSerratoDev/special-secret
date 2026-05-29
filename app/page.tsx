@@ -30,6 +30,9 @@ export default function Home() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div className="min-w-screen">
+            <Frames />
+          </div>
           <div className="text-center max-w-xl px-4 pb-10 animate-fade-in text-2xl md:text-3xl font-light tracking-wide">
             <TextSlice
               text={[
@@ -57,9 +60,7 @@ export default function Home() {
             />
 
           </div>
-          <div>
-            <Frames />
-          </div>
+          
         </div>
       )}
     </div>

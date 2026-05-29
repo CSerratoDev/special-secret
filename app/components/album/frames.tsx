@@ -11,7 +11,7 @@ const PHOTO_PATHS = [
 export default function Frames() {
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl w-full p-4 animate-fade-in">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-6 max-w-2xl w-full p-4 animate-fade-in">
             {PHOTO_PATHS.map((src, index) => (
                 <div
                     key={index}
@@ -21,7 +21,7 @@ export default function Frames() {
                         <img
                             src={src}
                             alt={`Recuerdo ${index + 1}`}
-                            className='w-[200] h-[200] object-cover filter brightness-95 contrast-105'
+                            className='w-aut h-auto md:w-[200] md:h-[200] object-cover filter brightness-95 contrast-105'
                             loading="lazy"
                         />
                     </div>
