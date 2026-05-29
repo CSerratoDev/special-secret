@@ -1,23 +1,27 @@
 "use client"
 
 import { useState } from "react";
+
 import HappyBirthday from "./components/start/happy-birthday";
 import TextSlice from "./utils/TextSlice";
-import { CgGift } from "react-icons/cg";
+
 import Frames from "./components/album/frames";
 import { LuMessageCircleHeart } from "react-icons/lu";
+import HeartCursor from "./utils/HeartCursor";
 
 export default function Home() {
   const [isLetter, setIsLetter] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen text-black bg-white">
+    <div className="flex flex-col justify-center items-center min-h-screen text-black bg-white cursor-none">
+        <HeartCursor/>
       {!isLetter ? (
+        
         <div className="flex flex-col items-center gap-8 animate-fade-in">
           <HappyBirthday />
           <button
             onClick={() => setIsLetter(true)}
-            className="flex items-center justify-center gap-3 p-4 rounded-lg text-white font-bold bg-gradient-to-r from-red-500 via-pink-500 to-red-500 bg-[length:200%_auto] animate-pulse transition-all duration-300 hover:scale-110 hover:bg-[right_center]"
+            className="flex items-center justify-center gap-3 p-4 rounded-lg text-white font-bold bg-gradient-to-r from-red-500 via-pink-500 to-red-500 bg-[length:200%_auto] animate-pulse transition-all duration-300 hover:scale-110 hover:bg-[right_center] cursor-none"
             aria-label="Abre la carta amor"
           >
             <p className="text-md font-bold "> ABRE tu cartita AMOR</p>
