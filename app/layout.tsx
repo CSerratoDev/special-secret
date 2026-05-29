@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TQM Princesa <3",
-  description: "Feliz Cumpleaños Hermosa!!! TQM Me Encantaaaaas",
+  description: "Feliz Cumpleaños Hermosa!!! TQM Me Encantaaaaas atte: Alexis Serrato c:",
 };
 
 export default function RootLayout({
@@ -27,7 +27,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="h-full flex flex-col">
+        <main className="">
+          {children}
+          </main>
+        </body>
     </html>
   );
 }
