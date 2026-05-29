@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 type Photo = {
     src: string;
@@ -32,8 +33,8 @@ export default function Frames() {
     const currentPhotos = PHOTO_PATHS.slice(startIndex, startIndex + ITEMS_PER_PAGE)
 
     return (
-        <div className="flex flex-col items-center max-w-2xl w-full p-4 gap-6">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl w-full p-4 animate-fade-in">
+        <div className="flex flex-col items-center max-w-2xl w-full gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl w-full p-3 animate-fade-in">
                 {currentPhotos.map((photo, index) => {
                     const globalIndex = startIndex + index
                     return (
@@ -64,7 +65,7 @@ export default function Frames() {
             </div>
             
             {PHOTO_PATHS.length > ITEMS_PER_PAGE && (
-                <div className="flex items-center gap-4 mt-4 font-serif text-sm">
+                <div className="hidden md:flex items-center gap-4 md:mt-4 font-serif text-sm cursor-none">
                     <button
                         onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                         disabled={currentPage === 1}
@@ -87,6 +88,29 @@ export default function Frames() {
                 </div>
             )}
 
+            {PHOTO_PATHS.length > ITEMS_PER_PAGE && (
+                <div className="md:hidden absolute bottom-5 flex items-center gap-4 md:mt-4 font-serif text-sm cursor-none">
+                    <button
+                        onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                        disabled={currentPage === 1}
+                        className="px-3 py-3 rounded-full bg-yellow-200 transition-colors"
+                    >
+                        <FaArrowLeft />
+                    </button>
+
+                    <span className="font-bold text-lg text-gray-600">
+                        Página {currentPage} de {totalPages}
+                    </span>
+
+                    <button
+                        onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                        disabled={currentPage === totalPages}
+                        className="px-3 py-3 rounded-full bg-blue-200 transition-colors"
+                    >
+                        <FaArrowRight />
+                    </button>
+                </div>
+            )}
 
         </div>
     );
