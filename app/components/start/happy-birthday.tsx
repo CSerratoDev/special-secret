@@ -10,7 +10,7 @@ export default function HappyBirthday() {
         <>
             <SplitText
                 text="¡Feliz Cumpleaños!"
-                className="text-9xl font-semibold text-center text-white"
+                className="text-3xl md:text-9xl font-semibold text-center text-black"
                 delay={50}
                 duration={1.25}
                 ease="power3.out"
@@ -24,7 +24,7 @@ export default function HappyBirthday() {
             />
             <SplitText
                 text="👑 Princesa 👑"
-                className="text-9xl font-semibold text-center text-pink-500"
+                className="text-3xl md:text-9xl font-semibold text-center text-pink-500"
                 delay={200}
                 duration={1.25}
                 ease="power3.out"
