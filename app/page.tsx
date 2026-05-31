@@ -79,11 +79,10 @@ export default function Home() {
               deletingSpeed={40}
               cursorBlinkDuration={0.6}
               variableSpeed={{ min: 50, max: 150 }}
+              className="md:block absolute z-10 top-40 md:z-0 md:top-1/3"
             />
-
           </div>
-          <div className="h-screen flex flex-col justify-center items-center bg-gray-200">
-            <h1 className="text-lg font-normal m-0">Desliza abajo 👀</h1>
+          <div className="h-screen flex flex-col justify-center items-center md:bg-gray-200">
             <Frames />
           </div>
         </div>
