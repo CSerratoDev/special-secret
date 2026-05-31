@@ -46,7 +46,7 @@ export default function Frames() {
                                 <img
                                     src={photo.src}
                                     alt={photo.title}
-                                    className='w-auto h-auto md:w-[200] md:h-[200] object-cover filter brightness-95 contrast-105'
+                                    className='w-auto bg-contain h-auto md:w-[200] md:h-[200] object-cover filter brightness-95 contrast-105'
                                     loading="lazy"
                                 />
                             </div>
@@ -89,7 +89,7 @@ export default function Frames() {
             )}
 
             {PHOTO_PATHS.length > ITEMS_PER_PAGE && (
-                <div className="md:hidden absolute bottom-5 flex items-center gap-4 md:mt-4 font-serif text-sm cursor-none">
+                <div className="flex items-center gap-4 md:mt-4 font-serif text-sm cursor-none">
                     <button
                         onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                         disabled={currentPage === 1}
@@ -105,7 +105,7 @@ export default function Frames() {
                     <button
                         onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                         disabled={currentPage === totalPages}
-                        className="px-3 py-3 rounded-full bg-blue-200 transition-colors"
+                        className="px-3 py-3 rounded-full bg-red-200 transition-colors"
                     >
                         <FaArrowRight />
                     </button>
