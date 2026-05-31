@@ -64,13 +64,23 @@ export default function Home() {
                 "Porque hoy...",
                 "Hoy...👀",
                 "Nació hace 25 años 👩🏻‍🍼...",
-                "Una PRINCESA 👑",
-                "Y eso fue lo mejor que paso aquel día 🌹",
-                "Te quiero Mucho Mi AMOR 🥰",
+                "Una Hermosa PRINCESA 👑",
+                "Y eso fue lo mejor",
+                "que paso aquel día 🌹",
+                "Cree estos recuerdos para nosotros mismos 📸",
+                "Son pocos... aún, pero relatan el inicio...",
+                "De nuestra Historia de Amor 🥰",
+                "Sostén este amor, como yo lo hago",
+                "y nunca estarás sola 💗",
+                "Solo dejame sentirte más cerca",
+                "permiteme tenerte en mis brazos",
+                "confia en mi, como yo confío en ti",
+                "Te quiero Mucho MI VIDA 🥰",
                 "Feliz cumpleeeee 🥳🎂🥹",
                 "TE QUIERO MUCHOOO 💘",
-                "ATENTAMENTE...",
-                "Alexis Serrato ✍🏽"
+                "Atentamente...",
+                "El amor de tu vida 😌...",
+                "Alexis Serrato 😇"
               ]}
               typingSpeed={75}
               pauseDuration={1000}
