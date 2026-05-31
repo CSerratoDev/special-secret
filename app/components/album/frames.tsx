@@ -63,30 +63,6 @@ export default function Frames() {
                     )
                 })}
             </div>
-            
-            {PHOTO_PATHS.length > ITEMS_PER_PAGE && (
-                <div className="hidden md:flex items-center gap-4 md:mt-4 font-serif text-sm cursor-none">
-                    <button
-                        onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-                        disabled={currentPage === 1}
-                        className="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    >
-                        Anterior
-                    </button>
-
-                    <span className="text-gray-600">
-                        Página {currentPage} de {totalPages}
-                    </span>
-
-                    <button
-                        onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-                        disabled={currentPage === totalPages}
-                        className="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    >
-                        Siguiente
-                    </button>
-                </div>
-            )}
 
             {PHOTO_PATHS.length > ITEMS_PER_PAGE && (
                 <div className="flex items-center gap-4 md:mt-4 font-serif text-sm cursor-none">
