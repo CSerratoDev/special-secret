@@ -72,15 +72,17 @@ export default function Home() {
                 "De nuestra Historia de Amor 🥰",
                 "Sostén este amor, como yo lo hago",
                 "y nunca estarás sola 💗",
-                "Solo dejame sentirte más cerca",
                 "permiteme tenerte en mis brazos",
-                "confia en mi, como yo confío en ti",
-                "Te quiero Mucho MI VIDA 🥰",
+                "recuesta tu cabeza en mi pecho",
+                "se testigo de mi corazon latente por ti 💗",
+                "confia en mi",
+                "como yo confio en ti",
+                "juntos seremos felices por siempre",
                 "Feliz cumpleeeee 🥳🎂🥹",
-                "TE QUIERO MUCHOOO 💘",
+                "Te quiero Mucho MI VIDA 🥰",
                 "Atentamente...",
-                "El amor de tu vida 😌...",
-                "Alexis Serrato 😇"
+                "El amor de tu vida 🫣...",
+                "Alexis Serrato 💘"
               ]}
               typingSpeed={75}
               pauseDuration={1000}
