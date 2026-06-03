@@ -67,7 +67,7 @@ export default function Home() {
                 "Una Hermosa PRINCESA 👑",
                 "Y eso fue lo mejor",
                 "que paso aquel día 🌹",
-                "Cree estos recuerdos para nosotros mismos 📸",
+                "Cree estos recuerdos para nosotros 📸",
                 "Son pocos... aún, pero relatan el inicio...",
                 "De nuestra Historia de Amor 🥰",
                 "Sostén este amor, como yo lo hago",
