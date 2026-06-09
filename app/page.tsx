@@ -39,10 +39,10 @@ export default function Home() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 items-center w-full">
-          <div className="md:h-screen flex flex-col items-center justify-center text-center pt-10 px-4 pb-5 animate-fade-in text-2xl md:text-3xl font-light tracking-wide">
+          <div className="md:h-screen flex flex-col items-center justify-center text-center pt-10 px-4 animate-fade-in text-2xl md:text-3xl font-light tracking-wide bg-gray-800 pb-12">
             <div className="mb-6 w-full max-w-md bg-pink-50 p-3 rounded-2xl shadow-sm border border-pink-100 z-10">
               <p className="flex justify-center items-center text-xs font-semibold text-pink-500 mb-2 animate-pulse">
-                <IoMusicalNoteOutline size={24}/> Escucha esto mientras lees...
+                <IoMusicalNoteOutline size={24}/> Escucha mientras lees...
               </p>
               <audio
                 ref={audioRef}
@@ -55,30 +55,31 @@ export default function Home() {
             <TextSlice
               text={[
                 "Pensaste que lo iba olvidar?",
-                "Hay pocas cosas que NO me gustan olvidar",
-                "Sin duda, serás siempre una de ellas ❤️",
-                "Amor... ¡Hoy! quiero desearte",
-                "una BONITA mañana 🌼",
-                "un HERMOSO día ☀️",
-                "una VELADA increíble 💗",
-                "Porque hoy...",
+                "Hay pocos dias que NO me gustan olvidar",
+                "Tu día sera siempre uno de ellos ❤️",
+                "Amor...🥰¡Hoy quiero desearte!",
+                "muchaaaa SALUD 😇",
+                "BIENESTAR en tu VIDAAA 🥺",
+                "y que no te falte la FELICIDAD 💗",
                 "Hoy...👀",
-                "Nació hace 25 años 👩🏻‍🍼...",
-                "Una Hermosa PRINCESA 👑",
-                "Y eso fue lo mejor",
-                "que paso aquel día 🌹",
-                "Cree estos recuerdos para nosotros 📸",
-                "Son pocos... aún, pero relatan el inicio...",
+                "Hace 25 años...",
+                "La tierra presencio el nacimiento",
+                "De una Hermosa PRINCESA 👑",
+                "Y eso fue lo MEJOR",
+                "que sucedió aquel DÍA 🌹",
+                "Estos recuerdos que ves en fotos...",
+                "Aunque son pocos, relatan el inicio...",
                 "De nuestra Historia de Amor 🥰",
-                "Sostén este amor, como yo lo hago",
+                "Nunca dudes de tu belleza 🤗",
                 "yo te aseguro...",
-                "que nunca estarás sola 💗",
-                "permiteme tenerte en mis brazos",
-                "recuesta tu cabeza en mi pecho",
-                "se testigo de mi corazon latente por ti 💗",
+                "que nunca te dejare sola 💗",
+                "permiteme tomarte de la mano y abrazarte",
+                "recuesta tu cabeza en mi pecho y...",
+                "se testigo de como,",
+                "mi corazon late por ti 💗",
                 "confia en mi",
                 "como yo confio en ti",
-                "juntos seremos felices por siempre",
+                "juntos seremos felices",
                 "Feliz cumpleeeee 🥳🎂🥹",
                 "Te quiero Mucho MI VIDA 🥰",
                 "Atentamente...",
@@ -92,7 +93,7 @@ export default function Home() {
               deletingSpeed={40}
               cursorBlinkDuration={0.6}
               variableSpeed={{ min: 50, max: 150 }}
-              className="md:block absolute z-10 top-40 md:z-0 md:top-1/3"
+              className="md:block md:text-2xl text-sm absolute z-10 top-40 md:z-0 md:top-1/3 text-white"
             />
           </div>
           <div className="h-screen flex flex-col justify-center items-center md:bg-gray-200">
