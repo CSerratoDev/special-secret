@@ -19,7 +19,7 @@ const PHOTO_PATHS: Photo[] = [
     { src: '/photos/flor.png', title: 'Esa flor 🌼' },
     { src: '/photos/cartita.png', title: 'Cartita ❤️' },
     { src: '/photos/mensajitos.jpg', title: 'Mensajitos 👀' },
-    { src: '/photos/ella.jpg', title: 'Tu Bello Rostro 🌷' },
+    { src: '/photos/me_encantas.jpg', title: 'Tu Bello Rostro 🌷' },
     { src: '/photos/me_flechaste.png', title: 'Me flechaste 💘' }
 ]
 
@@ -52,7 +52,7 @@ export default function Frames() {
                             </div>
 
                             <div className="w-full flex justify-between mt-2">
-                                <h3 className="font-light text-sm font-medium text-gray-600 tracking-wide">
+                                <h3 className="text-sm font-medium text-gray-600 tracking-wide">
                                     {photo.title}
                                 </h3>
                                 <span className='font-serif text-xs text-gray-400 tracking-widest uppercase'>
