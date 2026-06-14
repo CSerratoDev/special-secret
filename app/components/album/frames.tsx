@@ -11,7 +11,7 @@ type Photo = {
 const PHOTO_PATHS: Photo[] = [
     { src: '/photos/primer_dia.jpg', title: 'Primer fotito 🥰' },
     { src: '/photos/bonita.jpg', title: 'Bonitaaa 😍' },
-    { src: '/photos/preciosa.jpg', title: 'Preciosa 😳' },
+    { src: '/photos/nosotros_de_blanco.jpg', title: 'Preciosa 😳' },
     { src: '/photos/mua.jpg', title: 'Mua 🥹' },
     { src: '/photos/nosotros.png', title: 'Nosotros 🤓' },
     { src: '/photos/me_gustas.png', title: 'Me gustas 🫣' },
@@ -19,7 +19,7 @@ const PHOTO_PATHS: Photo[] = [
     { src: '/photos/flor.png', title: 'Esa flor 🌼' },
     { src: '/photos/cartita.png', title: 'Cartita ❤️' },
     { src: '/photos/mensajitos.jpg', title: 'Mensajitos 👀' },
-    { src: '/photos/ella.jpg', title: 'Tu Hermoso Rostro 🌷' },
+    { src: '/photos/ella.jpg', title: 'Tu Bello Rostro 🌷' },
     { src: '/photos/me_flechaste.png', title: 'Me flechaste 💘' }
 ]
 
