@@ -40,19 +40,20 @@ export default function Frames() {
                     return (
                         <div
                             key={globalIndex}
-                            className='bg-white p-3 pb-6 rounded-sm shadow-2xl transform transition-all duration-500 hover:scale-105 hover:rotate-1 md:odd:-rotate-1 flex flex-col items-center'
+                            className='select-none bg-white p-3 pb-6 rounded-sm shadow-2xl transform transition-all duration-500 hover:scale-105 hover:rotate-1 md:odd:-rotate-1 flex flex-col items-center'
                         >
-                            <div className='w-full aspect-square bg-gray-100 overflow-hidden relative rounded-sm border-black/5'>
+                            <div className='w-full aspect-square bg-gray-100 overflow-hidden rounded-sm border border-black/5 flex items-center justify-center'>
                                 <img
                                     src={photo.src}
                                     alt={photo.title}
-                                    className='w-auto bg-contain h-auto md:w-[200] md:h-[200] object-cover filter brightness-95 contrast-105'
+                                    className='w-full h-full object-cover object-center brightness-95 contrast-105'
                                     loading="lazy"
+                                    draggable={false}
                                 />
                             </div>
 
                             <div className="w-full flex justify-between mt-2">
-                                <h3 className="text-sm font-medium text-gray-600 tracking-wide">
+                                <h3 className="text-sm font-medium text-gray-600 tracking-wide truncate">
                                     {photo.title}
                                 </h3>
                                 <span className='font-serif text-xs text-gray-400 tracking-widest uppercase'>
