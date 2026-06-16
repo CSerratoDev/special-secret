@@ -1,6 +1,6 @@
 'use client'
 import SplitText from "@/app/utils/SplitText"
-import { Card, CardContent, CardFooter, CardHeader } from "@heroui/react";
+import { Card, CardContent, CardHeader } from "@heroui/react";
 import { BsCake2 } from "react-icons/bs";
 import { GiQueenCrown } from "react-icons/gi";
 
