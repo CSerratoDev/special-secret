@@ -1,14 +1,14 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react";
-
 import HappyBirthday from "./components/start/happy-birthday";
 import TextSlice from "./utils/TextSlice";
-
 import Frames from "./components/album/frames";
-import { LuMessageCircleHeart } from "react-icons/lu";
 import HeartCursor from "./utils/HeartCursor";
 import { IoMusicalNoteOutline } from "react-icons/io5";
+import { PiGiftFill } from "react-icons/pi";
+import { Card, CardFooter } from "@heroui/react";
+import HeartsBackground from "./utils/HeartsBackground";
 
 export default function Home() {
   const [isLetter, setIsLetter] = useState(false);
@@ -24,19 +24,22 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen text-black bg-white cursor-none">
+      <HeartsBackground />
       <HeartCursor />
       {!isLetter ? (
-        <div className="flex flex-col items-center gap-8 animate-fade-in">
+        <Card className="flex flex-col items-center gap-8 animate-fade-in">
           <HappyBirthday />
-          <button
-            onClick={() => setIsLetter(true)}
-            className="flex items-center justify-center gap-3 p-4 rounded-lg text-white font-bold bg-gradient-to-r from-red-500 via-pink-500 to-red-500 bg-[length:200%_auto] animate-pulse transition-all duration-300 hover:scale-110 hover:bg-[right_center] cursor-none"
-            aria-label="Abre la carta amor"
-          >
-            <p className="text-md font-bold "> ABRE tu cartita AMOR</p>
-            <LuMessageCircleHeart size={24} />
-          </button>
-        </div>
+          <CardFooter className="p-1 md:p-2 flex justify-center items-center gap-2">
+            <button
+              onClick={() => setIsLetter(true)}
+              className="button-special"
+              aria-label="Abre la carta amor"
+            >
+              <p> ABREME </p>
+                <PiGiftFill size={24} />
+            </button>
+          </CardFooter>
+        </Card>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 items-center w-full">
           <div className="md:h-screen flex flex-col items-center justify-center text-center pt-10 px-4 animate-fade-in text-2xl md:text-3xl font-light tracking-wide bg-gray-800 pb-12">
